@@ -1,0 +1,41 @@
+{% extends 'main/osnova.html' %}
+
+    {% block title %}
+    	Weather
+	{% endblock %}
+
+	{% block style %}
+    <style>
+    	ul {
+    		margin-left: -100px;
+    		margin-right: -8px;
+    	}
+    </style>
+    <style>
+    	.rectangle {
+    		height: 50px;
+    		width: auto;
+    		background-color: #ceacff;
+    	}
+    </style>
+    <style>
+    	body {
+    		height: auto; /*авторегулировка высоты фона*/
+    		background: linear-gradient(to bottom, #66ccff 0%, #ff99ff 100%);/*зданий фон с градиентом*/
+    		background-attachment: fixed; /*фиксация фона*/
+		}
+    </style>
+    <style>
+    	a {
+    		text-decoration: none;
+    	}
+    </style>
+	{% endblock %}
+
+	{% block content %}
+  	<h1>MeteoKZ</h1>
+    <h2>Завтра</h2>
+  	<ul>
+  	<div class="rectangle"></div>
+    </ul>
+	{% endblock %}

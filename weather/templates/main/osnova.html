@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<!--начало кода-->
+  <head>
+  	<!--Название странички-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="C:\Users\User\Desktop\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <title>
+    {% block title %}
+    {% endblock %}
+    </title>
+    {% block style %}
+    {% endblock %}
+  </head>
+  <body>
+  	<!--Основная инфа на сайте-->
+  	<!--
+  	<style>	
+  		@font-face {
+  			font-family: "Yanone Kaffeesatz";
+  			src: url('C:\Users\User\Desktop\Yanone_Kaffeesatz\static\YanoneKaffeesatz-Bold.ttf');
+  		}
+  	</style>
+  	<h1 style="font-family: Yanone Kaffeesatz;">MeteoKZ</h1>
+  	Проба изменить стиль шрифта на сайте с использоманием загруженного файла на ПК-->
+  	{% block content %}
+    {% endblock %}	
+<!--
+  	</p>
+ <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Москва')">Москва</button>
+  <button class="tablinks" onclick="openCity(event, 'Берлин')">Берлин</button>
+  <button class="tablinks" onclick="openCity(event, 'Пекин')">Пекин</button>
+</div>
+  	<div id="Москва" class="tabcontent">
+  <h3>Москва</h3>
+  <p>Москва это столица России.</p>
+</div>
+<div id="Берлин" class="tabcontent">
+  <h3>Берлин</h3>
+  <p>Берлин это столица Германии.</p>
+</div>
+<div id="Пекин" class="tabcontent">
+  <h3>Пекин</h3>
+  <p>Пекин это столица Китая.</p>
+</div>
+пробник создания кнопок (НЕУДАЧНЫЙ, лучше создавать ссылки!!!!)-->
+  </body>
+</html>
